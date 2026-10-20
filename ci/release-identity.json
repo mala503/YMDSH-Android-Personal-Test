@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "packageName": "com.yunmeng.dsh",
+  "certificateSha256": "66de1b2a511f64f09d4081dd44eb35df24033db3e57f5ef88aff57d0d82a0746",
+  "schemes": ["v1", "v2", "v3"]
+}

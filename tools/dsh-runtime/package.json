@@ -1,0 +1,9 @@
+{
+  "name": "ymdsh-locked-dsh-runtime",
+  "version": "0.2.1-rc.2",
+  "private": true,
+  "description": "Offline arm64 DSH runtime, exact npm prerelease pin",
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2"
+  }
+}

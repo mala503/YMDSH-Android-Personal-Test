@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 素纸：暖白纸张、烟墨、低饱和蓝灰。纯粹但不生硬。 -->
+    <color name="ym_paper_surface">#FCFBF8</color>
+    <color name="ym_paper_card">#FFFFFF</color>
+    <color name="ym_paper_raised">#F3F1EB</color>
+    <color name="ym_paper_primary">#40566E</color>
+    <color name="ym_paper_on_primary">#FFFFFF</color>
+    <color name="ym_paper_secondary">#647689</color>
+    <color name="ym_paper_text">#222D35</color>
+    <color name="ym_paper_muted">#5D6B72</color>
+    <color name="ym_paper_line">#E5E2DA</color>
+    <color name="ym_paper_select">#DFE7EB</color>
+
+    <!-- 瓷白：透亮冷白、浅雾蓝、钴蓝的细节强调。 -->
+    <color name="ym_porcelain_surface">#F6F9FF</color>
+    <color name="ym_porcelain_card">#FFFFFF</color>
+    <color name="ym_porcelain_raised">#E9F1FC</color>
+    <color name="ym_porcelain_primary">#245BA4</color>
+    <color name="ym_porcelain_on_primary">#FFFFFF</color>
+    <color name="ym_porcelain_secondary">#4979B4</color>
+    <color name="ym_porcelain_text">#1C3047</color>
+    <color name="ym_porcelain_muted">#566D87</color>
+    <color name="ym_porcelain_line">#DAE5F2</color>
+    <color name="ym_porcelain_select">#D6E7FC</color>
+
+    <!-- Claude 灵感：柔白奶油纸、赤陶主色、暖灰线条。独立调色，不复制现有主题。 -->
+    <color name="ym_claude_surface">#FFFBF6</color>
+    <color name="ym_claude_card">#FFFFFF</color>
+    <color name="ym_claude_raised">#F6ECE5</color>
+    <color name="ym_claude_primary">#B45F42</color>
+    <color name="ym_claude_on_primary">#FFFFFF</color>
+    <color name="ym_claude_secondary">#836657</color>
+    <color name="ym_claude_text">#382F2B</color>
+    <color name="ym_claude_muted">#776963</color>
+    <color name="ym_claude_line">#E9DDD5</color>
+    <color name="ym_claude_select">#F3DCD0</color>
+</resources>

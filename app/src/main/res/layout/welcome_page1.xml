@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceContainerLowest" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="24dp" android:paddingEnd="24dp"
+        android:paddingTop="28dp" android:paddingBottom="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="你的手机，就是工作台。" android:textSize="12sp" android:letterSpacing=".09"
+            android:textColor="?attr/colorPrimary" android:textStyle="bold" android:includeFontPadding="false"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="把灵感，\n放进口袋。" android:textSize="36sp" android:lineSpacingExtra="2dp"
+            android:textColor="?attr/colorOnSurface" android:textStyle="bold" android:includeFontPadding="false"
+            android:layout_marginTop="12dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="用原生操作界面管理 DSH、终端与手机工作区。从打开应用开始，一步步完成配置。"
+            android:textSize="14sp" android:lineSpacingExtra="5dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="14dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:background="@drawable/ymdsh_console_card"
+            android:padding="20dp" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="●  ●  ●" android:textSize="13sp" android:letterSpacing=".06"
+                    android:textColor="#92ADBE"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ymdsh  /  preview" android:textSize="10sp" android:fontFamily="monospace"
+                    android:textColor="#A7BECC"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginTop="18dp" android:background="#344C5F"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="~/workspace" android:textColor="#91C8EA" android:textSize="12sp"
+                android:fontFamily="monospace" android:layout_marginTop="21dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="$ dsh --version" android:textColor="#FFFFFF"
+                android:textSize="18sp" android:fontFamily="monospace" android:layout_marginTop="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="0.2.0-rc.2" android:textColor="#AEDEBD"
+                android:textSize="13sp" android:fontFamily="monospace" android:layout_marginTop="14dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="演示视图 · 非实时运行状态" android:textSize="10sp" android:textColor="#98ABB9"
+                android:layout_marginTop="22dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="  ADB 支持  " android:textSize="11sp" android:textColor="?attr/colorPrimary"
+                android:background="@drawable/ymdsh_soft_chip" android:padding="9dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="  本地运行环境  " android:textSize="11sp" android:textColor="?attr/colorPrimary"
+                android:layout_marginStart="8dp" android:background="@drawable/ymdsh_soft_chip" android:padding="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

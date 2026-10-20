@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceContainerLowest" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="24dp" android:paddingEnd="24dp"
+        android:paddingTop="28dp" android:paddingBottom="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="02    /    连接设备" android:textSize="12sp" android:textStyle="bold"
+            android:letterSpacing=".12" android:textColor="?attr/colorPrimary"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ADB 连接，\n也能很简单。" android:textSize="32sp" android:textStyle="bold"
+            android:includeFontPadding="false" android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="14dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="跟着提示开启无线调试、输入配对码，就能在手机上调用已授权的设备能力。"
+            android:textSize="14sp" android:lineSpacingExtra="5dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="14dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:background="@drawable/ymdsh_feature_card"
+            android:padding="21dp" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="WIRELESS DEBUGGING" android:textSize="10sp" android:letterSpacing=".15"
+                android:fontFamily="monospace" android:textColor="?attr/colorOnSurfaceVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="22dp" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="01"
+                    android:gravity="center" android:textSize="13sp" android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="打开开发者选项" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="按指引前往系统设置" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="1dp" android:layout_height="20dp" android:layout_marginStart="19dp"
+                android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:background="?attr/colorOutlineVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="02"
+                    android:gravity="center" android:textSize="13sp" android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="启用无线调试并配对" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="在应用内输入配对信息" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="1dp" android:layout_height="20dp" android:layout_marginStart="19dp"
+                android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:background="?attr/colorOutlineVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="03"
+                    android:gravity="center" android:textSize="13sp" android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="按需授权设备操作" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="敏感权限仍由你决定" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ADB 非必需：你也可以先完成本地环境部署，再到设置中连接。"
+            android:textSize="12sp" android:lineSpacingExtra="4dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="17dp"/>
+    </LinearLayout>
+</ScrollView>

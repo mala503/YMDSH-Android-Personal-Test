@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "dshVersion": "0.2.1-rc.2",
+  "markers": [
+    "YMDSH_SCOPE_IDENTITY_021"
+  ],
+  "modules": [
+    "@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-acp-app/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-base/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-agent-team-profile/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-badge-skill-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-cot-translation-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-plugin-market-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-ralph-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-session-search/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-session-titles-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-terminal-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-experimental-voice-input-bundle/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-sdk-app/node_modules/@deepseek-ai/dsh-scope/lib/index.js",
+    ".ymdsh-root/node_modules/@deepseek-ai/dsh-sdk-minimal/node_modules/@deepseek-ai/dsh-scope/lib/index.js"
+  ],
+  "patches": [
+    {
+      "before": "const kScope = Symbol(\"dsh.scope\");",
+      "after": "/* YMDSH_SCOPE_IDENTITY_021: scope identity must survive a second packaged copy of dsh-scope. */\nconst kScope = Symbol.for(\"dsh.scope\");"
+    },
+    {
+      "before": "const carrierKeys = /* @__PURE__ */ new WeakMap();",
+      "after": "const carrierKeys = globalThis[Symbol.for(\"dsh.scope.carrierKeys\")] ??= /* @__PURE__ */ new WeakMap();"
+    },
+    {
+      "before": "const scopeParents = /* @__PURE__ */ new WeakMap();",
+      "after": "const scopeParents = globalThis[Symbol.for(\"dsh.scope.scopeParents\")] ??= /* @__PURE__ */ new WeakMap();"
+    },
+    {
+      "before": "function scopeOf(ctx) {\n\treturn ctx[kScope];\n}",
+      "after": "function scopeOf(ctx) {\n\tconst direct = ctx[kScope];\n\tif (direct !== void 0) return direct;\n\t/* YMDSH_SCOPE_IDENTITY_021: read a tag minted by an unpatched copy in the same process. */\n\tfor (let cursor = ctx; cursor !== null && cursor !== void 0; cursor = Object.getPrototypeOf(cursor))\n\t\tfor (const key of Object.getOwnPropertySymbols(cursor)) {\n\t\t\tif (key.description !== \"dsh.scope\") continue;\n\t\t\tconst value = cursor[key];\n\t\t\tif (value !== void 0) return value;\n\t\t}\n\treturn void 0;\n}"
+    }
+  ]
+}

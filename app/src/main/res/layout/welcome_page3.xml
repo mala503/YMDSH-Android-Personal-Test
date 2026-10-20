@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceContainerLowest" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="24dp" android:paddingEnd="24dp"
+        android:paddingTop="28dp" android:paddingBottom="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="03    /    首次准备" android:textSize="12sp" android:textStyle="bold"
+            android:letterSpacing=".12" android:textColor="?attr/colorPrimary"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="一次准备，\n随时开工。" android:textSize="32sp" android:textStyle="bold"
+            android:includeFontPadding="false" android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="14dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="环境首次解压会花一点时间。我们把需要做的事整理成了清晰的步骤，不用手动敲命令。"
+            android:textSize="14sp" android:lineSpacingExtra="5dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="14dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:background="@drawable/ymdsh_feature_card"
+            android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="随应用提供的本地组件" android:textSize="12sp" android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="19dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="46dp" android:layout_height="46dp"
+                    android:text="01" android:textSize="15sp" android:gravity="center"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Ubuntu 工作环境" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="随包离线文件 · 首次解压" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginTop="17dp" android:background="?attr/colorOutlineVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="17dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="46dp" android:layout_height="46dp"
+                    android:text="02" android:textSize="15sp" android:gravity="center"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="DeepSeek Harness" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="DSH 0.2.0-rc.2 · 运行核心" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginTop="17dp" android:background="?attr/colorOutlineVariant"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="17dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="46dp" android:layout_height="46dp"
+                    android:text="03" android:textSize="15sp" android:gravity="center"
+                    android:textColor="?attr/colorPrimary" android:background="@drawable/ymdsh_soft_chip"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="账号与偏好设置" android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="按页面提示自行完成登录" android:textSize="12sp"
+                        android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="隐私提示：读屏、相册及设备权限只在相应功能使用时请求授权。"
+            android:textSize="12sp" android:lineSpacingExtra="4dp"
+            android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

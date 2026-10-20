@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="?attr/colorSurfaceContainerLowest">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="24dp" android:paddingEnd="24dp" android:paddingTop="22dp"
+        android:paddingBottom="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"
+            android:src="@drawable/ymdsh_icon" android:background="@drawable/ymdsh_icon_frame"
+            android:scaleType="centerCrop" android:contentDescription="@null" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:layout_marginStart="12dp" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ymdsh" android:textSize="22sp" android:textStyle="bold"
+                android:letterSpacing="-.03" android:textColor="?attr/colorOnSurface" android:includeFontPadding="false"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="POCKET WORKSPACE" android:letterSpacing=".17" android:textSize="9sp"
+                android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="4dp"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:id="@+id/welcome_counter" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="01 / 03" android:textSize="12sp" android:textStyle="bold"
+            android:fontFamily="monospace" android:background="@drawable/ymdsh_soft_chip"
+            android:paddingHorizontal="13dp" android:paddingVertical="10dp"
+            android:textColor="?attr/colorPrimary" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/welcome_pager"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="24dp" android:paddingEnd="24dp"
+        android:paddingTop="12dp" android:paddingBottom="20dp">
+        <LinearLayout android:id="@+id/welcome_dots" android:layout_width="match_parent"
+            android:layout_height="12dp" android:orientation="horizontal" android:gravity="center_vertical"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/welcome_btn"
+            android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp"
+            android:text="下一步  →" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false"
+            android:background="@drawable/bg_btn_primary" android:textColor="@color/button_primary_text"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/welcome_skip"
+            android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="6dp"
+            android:text="跳过介绍" android:textSize="12sp" android:textAllCaps="false"
+            android:background="@drawable/bg_action_plain" android:textColor="?attr/colorOnSurfaceVariant"/>
+    </LinearLayout>
+</LinearLayout>

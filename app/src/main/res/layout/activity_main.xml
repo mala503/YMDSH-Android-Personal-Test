@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="?attr/colorSurfaceContainerLowest" android:orientation="vertical">
+  <LinearLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="78dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="16dp" android:paddingTop="12dp" android:paddingBottom="12dp">
+    <FrameLayout android:id="@+id/app_logo" android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/ymdsh_icon_frame" android:clipToOutline="true">
+      <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:scaleType="centerCrop" android:contentDescription="@null" android:src="@drawable/ymdsh_icon"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/sub_back" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:padding="12dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_ui_back" android:contentDescription="@string/ui_m0201" app:tint="@color/text" />
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="13dp">
+      <TextView android:id="@+id/app_title" style="@style/DshaText.PageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textSize="21sp" android:letterSpacing="-.02"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="YOUR POCKET WORKSPACE" android:letterSpacing=".10" android:textSize="9sp" android:textColor="?attr/colorOnSurfaceVariant" android:includeFontPadding="false" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btn_tasks" android:layout_width="44dp" android:layout_height="44dp" android:padding="11dp" android:src="@drawable/ic_ui_tasks" app:tint="@color/text_secondary" android:background="?attr/selectableItemBackgroundBorderless" />
+    <TextView android:id="@+id/btn_theme" style="@style/Widget.DSHA.ToolbarAction" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginEnd="8dp" android:text="@string/ui_m0020" android:padding="12dp" android:background="?attr/selectableItemBackgroundBorderless" />
+    <FrameLayout android:id="@+id/btn_about" android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_chip_clickable" android:clickable="true" android:contentDescription="@string/ui_m0067" android:focusable="true" android:visibility="gone">
+      <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_gravity="center" android:contentDescription="@null" android:src="@drawable/ic_about" app:tint="@color/text_secondary" />
+    </FrameLayout>
+  </LinearLayout>
+  <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+  <TextView android:id="@+id/environment_recovery_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:padding="12dp" android:textColor="@color/primary" android:background="@drawable/bg_chip_clickable" android:textSize="14sp" android:clickable="true" android:focusable="true" android:visibility="gone" android:gravity="center" android:includeFontPadding="false" />
+  <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+  <View android:layout_width="match_parent" android:layout_height="@dimen/stroke" android:background="@color/line" />
+  <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottom_nav" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorSurfaceContainerLowest" android:minHeight="76dp" app:itemIconSize="23dp" app:itemPaddingTop="11dp" app:itemPaddingBottom="9dp" app:elevation="0dp" app:itemIconTint="@color/nav_item_tint" app:itemTextColor="@color/nav_item_tint" app:labelVisibilityMode="labeled" app:menu="@menu/bottom_nav_menu" app:itemTextAppearanceActive="@style/Ui2.Nav" app:itemTextAppearanceInactive="@style/Ui2.Nav" />
+</LinearLayout>

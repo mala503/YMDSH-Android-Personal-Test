@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "dshVersion": "0.2.1-rc.2",
+  "active": [
+    {
+      "asset": "persona-compat-patch.json",
+      "module": "@deepseek-ai/dsh-persona/lib/index.js",
+      "markers": [
+        "YMDSH_PERSONA_SCOPED_021",
+        "YMDSH_PERSONA_LEGACY_TEXT_021",
+        "YMDSH_PERSONA_GLOBAL_OVERRIDE_021"
+      ]
+    },
+    {
+      "asset": "scope-identity-patch.json",
+      "markers": [
+        "YMDSH_SCOPE_IDENTITY_021"
+      ]
+    },
+    {
+      "asset": "guard-tools-patch.json",
+      "markers": [
+        "DSHA_REQUIRED_POLICY_V1"
+      ]
+    },
+    {
+      "asset": "guard-bash-patch.json",
+      "markers": [
+        "DSHA_REQUIRED_POLICY_V1"
+      ]
+    },
+    {
+      "asset": "guard-fs-patch.json",
+      "markers": [
+        "DSHA_REQUIRED_POLICY_V1"
+      ]
+    },
+    {
+      "asset": "guard-editor-patch.json",
+      "markers": [
+        "DSHA_REQUIRED_POLICY_V1"
+      ]
+    }
+  ],
+  "specialized": [],
+  "retired": [
+    {
+      "asset": "agent-preset-patch.json",
+      "reason": "Upstream owns read-only preset session headings; preserve known legacy input only."
+    },
+    {
+      "asset": "models-navigation-patch.json",
+      "reason": "Upstream owns model settings navigation; do not restore rc1 UI behavior."
+    },
+    {
+      "asset": "web-integration/tooltip-patch.json",
+      "reason": "Old 0.1.5 component replacement preserved as history. Current rc2 interaction/entry recipes retain the upstream Tooltip and add dismissal only."
+    }
+  ]
+}
